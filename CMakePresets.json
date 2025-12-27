@@ -1,0 +1,21 @@
+{
+  "version": 5,
+  "cmakeMinimumRequired": { "major": 3, "minor": 22 },
+  "configurePresets": [
+    {
+      "name": "mingw-debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_PREFIX_PATH": "C:/msys64/mingw64",
+        "CMAKE_C_COMPILER": "C:/msys64/mingw64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "C:/msys64/mingw64/bin/g++.exe",
+        "CMAKE_FIND_PACKAGE_PREFER_CONFIG": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "mingw-debug-build", "configurePreset": "mingw-debug" }
+  ]
+}

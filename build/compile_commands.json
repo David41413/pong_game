@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/david/.vscode/vscode_workspace/SFML/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/david/.vscode/vscode_workspace/SFML/include -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\david\\.vscode\\vscode_workspace\\SFML\\src\\main.cpp",
+  "file": "C:/Users/david/.vscode/vscode_workspace/SFML/src/main.cpp",
+  "output": "C:/Users/david/.vscode/vscode_workspace/SFML/build/CMakeFiles/main.dir/src/main.cpp.obj"
+}
+]

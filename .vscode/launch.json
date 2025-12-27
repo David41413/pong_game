@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SFML: Build + Debug (CMake preset)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/main.exe",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build (CMake preset)",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+      "environment": [
+        { "name": "PATH", "value": "C:/msys64/mingw64/bin;${env:PATH}" }
+      ],
+      "externalConsole": true,
+      "stopAtEntry": false
+    },
+    {
+      "name": "SFML: Debug (NO build)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/main.exe",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+      "environment": [
+        { "name": "PATH", "value": "C:/msys64/mingw64/bin;${env:PATH}" }
+      ],
+      "externalConsole": true,
+      "stopAtEntry": false
+    }
+  ]
+}

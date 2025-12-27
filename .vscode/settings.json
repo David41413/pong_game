@@ -1,0 +1,81 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "MSYS2 MinGW64": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe",
+      "args": ["-l"],
+      "env": {
+        "MSYSTEM": "MINGW64",
+        "CHERE_INVOKING": "1"
+      }
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "MSYS2 MinGW64",
+  "cmake.cmakePath": "C:/msys64/mingw64/bin/cmake.exe",
+  "cmake.configureEnvironment": {
+    "PATH": "C:\\msys64\\mingw64\\bin;C:\\msys64\\usr\\bin;${env:PATH}"
+  },
+  "cmake.buildEnvironment": {
+    "PATH": "C:\\msys64\\mingw64\\bin;C:\\msys64\\usr\\bin;${env:PATH}"
+  },
+
+  "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+  "files.associations": {
+    "array": "cpp",
+    "atomic": "cpp",
+    "bit": "cpp",
+    "cctype": "cpp",
+    "charconv": "cpp",
+    "chrono": "cpp",
+    "clocale": "cpp",
+    "cmath": "cpp",
+    "codecvt": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "cstddef": "cpp",
+    "cstdint": "cpp",
+    "cstdio": "cpp",
+    "cstdlib": "cpp",
+    "cstring": "cpp",
+    "ctime": "cpp",
+    "cwchar": "cpp",
+    "cwctype": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "exception": "cpp",
+    "algorithm": "cpp",
+    "functional": "cpp",
+    "iterator": "cpp",
+    "memory": "cpp",
+    "memory_resource": "cpp",
+    "numeric": "cpp",
+    "optional": "cpp",
+    "random": "cpp",
+    "ratio": "cpp",
+    "string_view": "cpp",
+    "system_error": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "utility": "cpp",
+    "format": "cpp",
+    "initializer_list": "cpp",
+    "iomanip": "cpp",
+    "iosfwd": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "new": "cpp",
+    "numbers": "cpp",
+    "ostream": "cpp",
+    "queue": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "sstream": "cpp",
+    "stdexcept": "cpp",
+    "streambuf": "cpp",
+    "text_encoding": "cpp",
+    "cinttypes": "cpp",
+    "typeinfo": "cpp",
+    "variant": "cpp"
+  }
+}
