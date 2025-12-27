@@ -25,7 +25,7 @@ Through this project, I gained more experience with:
 - **Delta-time rendering**: Ensuring smooth, frame-rate-independent movement
 - **C++ best practices**: Using const correctness, optional types, and modern C++ features
 
-#Challenges
+# Challenges
 
 The most difficult part of this project was implementing accurate collision detection for the paddles, as the ball goes through and inside the paddle between frames instead of just making contact with the rectangle's border, which is how I intiuitively thought of it. After several hours of debugging and testing, and a revisit the next morning, I figured out the minimum overlap calculation, making collisions against the paddles feel realistic.
 
