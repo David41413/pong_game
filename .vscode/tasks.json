@@ -14,15 +14,17 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "problemMatcher": "$gcc",
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": false
             }
         },
         {
-            "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
+            "type": "shell",
             "command": "C:/msys64/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
