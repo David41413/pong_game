@@ -1,3 +1,0 @@
-C:/Users/david/Projects/pong_game/build/CMakeFiles/main.dir
-C:/Users/david/Projects/pong_game/build/CMakeFiles/edit_cache.dir
-C:/Users/david/Projects/pong_game/build/CMakeFiles/rebuild_cache.dir
