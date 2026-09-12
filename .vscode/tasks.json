@@ -1,14 +1,47 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Build (CMake preset)",
-      "type": "shell",
-      "command": "cmake",
-      "args": ["--build", "--preset", "mingw-debug-build", "-j"],
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": ["$gcc"],
-      "group": { "kind": "build", "isDefault": true }
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build (CMake preset)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "--preset",
+                "mingw-debug-build",
+                "-j"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:/msys64/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: C:/msys64/mingw64/bin/g++.exe"
+        }
+    ]
 }
