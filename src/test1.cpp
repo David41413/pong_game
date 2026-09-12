@@ -2,8 +2,7 @@
 #include <optional>
 
 int main() {
-    sf::Vector2u windowSize{800u, 600u};
-    sf::RenderWindow window{sf::VideoMode(windowSize), "Test"};
+    sf::RenderWindow window{sf::VideoMode({800u, 600u}), "Test"};
     window.setVerticalSyncEnabled(true);
 
     sf::Clock clock;
@@ -17,7 +16,7 @@ int main() {
     sf::Vector2f velocity{600.f, 600.f};
 
     while(window.isOpen()) {
-        float dt = clock.restart().asSeconds();
+        float dt{ clock.restart().asSeconds() };
 
         while(const auto event = window.pollEvent()) {
             if(event->is<sf::Event::Closed>()) {
@@ -27,7 +26,6 @@ int main() {
 
         sf::Vector2f currentPos{ circle.getPosition() };
 
-        // Create resolveEdge again here
         auto resolveEdge{
             [](float pos, float radius, float limit) -> std::optional<float> {
                 if(pos - radius < 0) { return radius; }
@@ -36,11 +34,11 @@ int main() {
             }
         };
 
-        if(auto x = resolveEdge(currentPos.x, radius, windowSize.x)) {
+        if(auto x = resolveEdge(currentPos.x, radius, window.getSize().x)) {
             currentPos.x = *x;
             velocity.x *= -1.f;
         }
-        if(auto y = resolveEdge(currentPos.y, radius, windowSize.y)) {
+        if(auto y = resolveEdge(currentPos.y, radius, window.getSize().y)) {
             currentPos.y = *y;
             velocity.y *= -1.f;
         }
