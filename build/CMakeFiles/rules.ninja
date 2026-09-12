@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SC:\Users\david\.vscode\vscode_workspace\SFML -BC:\Users\david\.vscode\vscode_workspace\SFML\build
+  command = C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SC:\Users\david\Projects\pong_game -BC:\Users\david\Projects\pong_game\build
   description = Re-running CMake...
   generator = 1
 
